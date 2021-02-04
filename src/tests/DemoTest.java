@@ -9,10 +9,13 @@ import org.testng.annotations.Test;
 public class DemoTest {
 	
 	@Test
-	public void demoTest() throws IOException {
+	public void demoTest() /*throws IOException */  {
 		System.setProperty("webdriver.chrome.driver", "driver-lib\\chromedriver.exe");
 		
 		WebDriver driver = new ChromeDriver();
+		
+		driver.navigate().to("https://www.google.com");
+		
 	}
 	
 }
